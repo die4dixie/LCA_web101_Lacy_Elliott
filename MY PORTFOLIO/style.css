@@ -1,4 +1,17 @@
-body {
+* {
+  box-sizing: border-box;
+}
+@media (min-width: 320px) {
+  nav {
+    flex-direction: column;
+  }    
+    }
+    @media (min-width: 768px) {
+    
+    }
+    @media (min-width: 992px){
+
+    body {
     font-family: Arial, Helvetica, sans-serif;
     background-image: url();
     background-repeat: no-repeat;
@@ -54,6 +67,7 @@ body {
     justify-content: center; 
     flex-wrap: nowrap;
     width: 100%;
+    flex-direction: row;
   }
   
   #profile-pic {
@@ -65,7 +79,7 @@ body {
   }
   
   h1 {
-    color:white;
+    color:rgb(13, 126, 155);
     grid-column: 2/3;
     margin: 3% auto;
     border-bottom: 2px solid #1940A9;;
@@ -93,3 +107,4 @@ body {
     letter-spacing: 16px;
     font-style: italic;
   }
+}
