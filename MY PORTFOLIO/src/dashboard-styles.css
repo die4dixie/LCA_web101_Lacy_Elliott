@@ -1,0 +1,33 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 40% 1fr;
+    grid-template-rows: 0.5fr 1fr 1fr;
+    grid-template-areas: "header header header" "left_col main_col right_col" "left_col main_col right_col";
+  }
+  
+  .main_col { grid-area: main_col; }
+  
+  .left_col { grid-area: left_col; }
+  
+  .right_col { grid-area: right_col; }
+  
+  .header { grid-area: header; }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  /* add some spacing */
+  body          {
+    background: #F6F6F6;
+    padding-bottom: 30px;
+    padding-top: 30px;
+  }
+  
+  /* limit the width and center */
+  .calculator   {
+    max-width: 400px;
+    margin: 0 auto;
+    border: 2px solid #111;
+    border-radius: 5px;
+  }
