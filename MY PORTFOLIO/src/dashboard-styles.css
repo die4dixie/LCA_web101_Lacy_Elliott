@@ -1,33 +1,284 @@
-.grid-container {
+@media (min-width: 320px) {
+  div.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "header"
+    "left_col"
+    "left_col"
+    "main_col"
+    "main_col"
+    "right_col";
+  }
+  /* div.header {
+    grid-column: 1/2;
+    background-color: #373770;
+  }
+  div.left_col {
+    grid-column: 1/2;
+  }
+  div.main_col {
+    grid-column: 1/2;
+  }
+  div.right_col {
+    grid-column: 1/2;
+  } */
+}
+@media (min-width: 768px) {
+  div.grid-container {
     display: grid;
     grid-template-columns: 1fr 40% 1fr;
-    grid-template-rows: 0.5fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas: "header header header" "left_col main_col right_col" "left_col main_col right_col";
   }
-  
-  .main_col { grid-area: main_col; }
-  
-  .left_col { grid-area: left_col; }
-  
-  .right_col { grid-area: right_col; }
-  
-  .header { grid-area: header; }
+}
+@media (min-width: 992px) {
+  div.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 40% 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "header header header" "left_col main_col right_col" "left_col main_col right_col";
+  }  
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 40% 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "header header header" "left_col main_col right_col" "left_col main_col right_col";
+}
+
+.left_col {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "." ".";
+  grid-area: left_col;
+}
+
+.flex {
+  display: flex;
+  margin: 40px 35px; 
+}
+.header { grid-area: header; 
+font-size: 25px;
+font-weight: bold;
+font-family: fantasy;
+}
+
+.main_col { grid-area: main_col; }
+
+.right_col {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "." ".";
+  grid-area: right_col;
+}
+ 
   
   * {
     box-sizing: border-box;
   }
-  
-  /* add some spacing */
-  body          {
-    background: #F6F6F6;
-    padding-bottom: 30px;
-    padding-top: 30px;
-  }
-  
+    
   /* limit the width and center */
   .calculator   {
-    max-width: 400px;
+    max-width: 300px;
     margin: 0 auto;
-    border: 2px solid #111;
+    border: 2px solid rgb(224, 23, 23);
     border-radius: 5px;
   }
+body {
+  background-color: rgb(119, 209, 231);
+}
+#calcTop, #calcBottom {
+  height: 20px;
+  width: 300px;
+  background-color: rgb(197, 82, 82);
+  box-shadow: 3px 3px 2px #222 ;
+  margin: auto;
+}
+#calcTop {
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+
+}
+#calcBottom {
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+#calcBody {
+  background-color: #777;
+  height: 400px;
+  width: 300px;
+  box-shadow: 3px 3px 2px #222;
+  margin: auto;
+}
+h1, h3, #screen {
+  font-family: 'Rajdhani', sans-serif;
+}
+h1 {
+  margin: 0px 40px 0px 40px;
+  color: #ddd;
+  font-size: 1.8em;
+  text-align: center;
+}
+h2 {
+  margin: 0px 40px 0px 40px;
+  color: rgb(51, 44, 44);
+  font-size: 1.8em;
+  text-align: center;
+}
+h3 {
+  margin: 0px 40px 10px 40px;
+  color: #ddd;
+  font-size: 0.8em;
+  font-weight: 300;
+  text-align: center;
+}
+#screen {
+  margin: 20px 40px 20px 40px;
+  height: 35px;
+  background: #8EB095;
+  border-radius: 3px;
+  box-shadow: 2px 2px 1px #555 inset;
+}
+#screen p {
+  position: relative;
+  top: -3px;
+  margin: 7px;
+  text-align: right;
+  font-size: 1.4em;
+  overflow: hidden;
+
+}
+#buttonPad {
+  -webkit-column-count: 4;
+  -moz-column-count: 4;
+  column-count: 4;
+  width: 240px;
+  margin: auto;
+}
+button {
+  height: 35px;
+  width: 50px;
+  margin: 5px 0 5px 0;
+  border-radius: 3px;
+  font-size: 1.1em;
+}
+#plus {
+  height: 80px;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the list items */
+ul li {
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  background: #eee;
+  font-size: 18px;
+  transition: 0.2s;
+
+  /* make the list items unselectable */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Set all odd list items to a different color (zebra-stripes) */
+ul li:nth-child(odd) {
+  background: #f9f9f9;
+}
+
+/* Darker background-color on hover */
+ul li:hover {
+  background: #ddd;
+}
+
+/* When clicked on, add a background color and strike out text */
+ul li.checked {
+  background: #888;
+  color: #fff;
+  text-decoration: line-through;
+}
+
+/* Add a "checked" mark when clicked on */
+ul li.checked::before {
+  content: '';
+  position: absolute;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}
+
+/* Style the close button */
+.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 12px 16px 12px 16px;
+}
+
+.close:hover {
+  background-color: #f44336;
+  color: white;
+}
+
+/* Style the header */
+.header {
+  background-color: #f44336;
+  padding: 30px 40px;
+  color: white;
+  text-align: center;
+}
+
+/* Clear floats after the header */
+.header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the input */
+input {
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  width: 75%;
+  padding: 10px;
+  float: left;
+  font-size: 16px;
+}
+
+/* Style the "Add" button */
+.addBtn {
+  padding: 10px;
+  width: 25%;
+  background: #d9d9d9;
+  color: #555;
+  float: left;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 0;
+}
+
+.addBtn:hover {
+  background-color: #bbb;
+}
