@@ -55,13 +55,53 @@
     border: 2px solid rgb(4, 41, 66);
   }
   
+  @-webkit-keyframes pulse {
+    0% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+  
+    50% {
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+    }
+  
+    100% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes pulse {
+    0% {
+      -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+      transform: scale(1);
+    }
+  
+    50% {
+      -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+      transform: scale(1.1);
+    }
+  
+    100% {
+      -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+      transform: scale(1);
+    }
+  }
+  
   .has-border {
     border-radius: 25px;
     border: 2px solid #0795C3;
     background: white;
     padding: 20px; 
+    -webkit-animation-name: pulse;
+    animation-name: pulse;
   }
   
+ 
   nav {
     display: flex;
     justify-content: center; 
