@@ -1,0 +1,40 @@
+#header {
+
+    background: url(../images/Book_header.jpeg) center repeat;
+    padding: 60px;
+    background-size: contain;
+    text-align: left;
+    color: #899;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 20px;
+    
+}
+
+#main {
+
+    background: tan;
+    text-align: start;
+    color: rgb(32, 20, 10);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
+
+
+}
+
+
+h2 {
+font-weight: 75;
+
+}
+
+h3 {
+    font-weight: 60
+}
+
+#most {
+
+    background: tan;
+    color: rgb(46, 23, 7);
+    text-align: left;
+}
