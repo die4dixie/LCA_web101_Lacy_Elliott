@@ -28,9 +28,15 @@
     <h1>Add Numbers</h1>
     <p>Given two numbers, return the sum of the two numbers.</p>
     <script>
-        const addNums = (a, b) => {
-            // your code here
-        }
+         function addNumbers(a, b) {
+    return a + b; ;
+}
+x = addNumbers(3, 8);
+document.write(x);
+          
+                   
+                   // your code here
+        
 
         addNums(3, 8) // => 11
     </script>
@@ -44,8 +50,19 @@
         const exampleArr = [1, 0, 9, 18, 3, 0, 0, 9, 70, 44, 0]
 
         const removeZeros = (arr) => {
-        // your code here
-        }
+            var a = [1, 0, 9, 18, 3, 0, 0, 9, 70, 44, 0];
+for(var i=0; i<a.length;i++ )
+{ 
+     if(a[i] == 0)
+     {
+         a.splice(i,1);  
+         i--; 
+     }
+} 
+}
+console.log(a);
+// your code here
+        
 
         removeZeros(exampleArr) // => [1, 9, 18, 3, 9, 70, 44]
     </script>
