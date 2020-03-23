@@ -1,0 +1,193 @@
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+@media (min-width: 576px) { 
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: "Header" "Bacon-1" "Bacon-2" "Bacon-3";
+        height: 100%;
+        
+    } 
+    .Header { grid-area: Header;
+        background-color: #2BCDC0;
+        height: 500px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        text-align: center;
+        vertical-align: middle;
+        font-size: 22px;
+letter-spacing: 1.5px;
+word-spacing: 4.5px;
+font-weight: 550;
+text-decoration: none;
+font-style: normal;
+font-variant: normal;
+text-transform: capitalize;
+color: #FFFFFF;
+text-shadow: 4px 3px 0 #7A7A7A;
+color: #FFFFFF;
+padding:  150px;
+}
+ }
+
+ @media (min-width: 992px) { 
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "Header Header Header" "Bacon-1 Bacon-2 Bacon-3";
+    height: 100%;
+  }
+}
+
+#transheader {
+    margin: 0px;
+    text-align: center;
+    background-color:#2BCDC0;
+    color: white;
+    font-size: 20px;
+  }
+
+  .nav-bar {
+      height: 25px;
+
+  }
+
+  .Header { grid-area: Header;
+            background-color: #2BCDC0;
+            height: 500px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            text-align: center;
+            vertical-align: middle;
+            font-size: 75px;
+letter-spacing: 2.2px;
+word-spacing: 5.2px;
+font-weight: 700;
+text-decoration: none;
+font-style: normal;
+font-variant: normal;
+text-transform: capitalize;
+color: #FFFFFF;
+text-shadow: 4px 3px 0 #7A7A7A;
+color: #FFFFFF;
+padding: 250px;
+}
+        
+       
+  
+  .Colorbar1 {background-color: #33A8DD;
+              margin: 10%;
+              text-align: center;
+              padding: 12px;
+
+  }
+
+  .Bacon-1 { grid-area: Bacon-1;
+              color: black;
+             background-color: black;
+  }
+  
+  h3 {color: white;
+}
+
+.Bacon1article, .Bacon3article, .Bacon2article {
+    margin: 10%;
+}
+
+.Colorbar2 { background-color: #F46731;
+    margin: 10%;
+    text-align: center;
+    padding: 12px;
+}
+
+.Bacon-2 { grid-area: Bacon-2; 
+            background-color: black;
+        }
+  
+.Colorbar3 {background-color: #2BCDC0;
+    margin: 10%;
+    text-align: center;
+    padding: 12px;
+}
+
+.Bacon-3 { grid-area: Bacon-3;
+background-color: black; 
+}
+
+.Article1Header 
+    { grid-area: Header;
+        background-color: #33A8DD;
+        height: 500px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        text-align: center;
+        vertical-align: middle;
+        font-size: 75px;
+letter-spacing: 2.2px;
+word-spacing: 5.2px;
+font-weight: 700;
+text-decoration: none;
+font-style: normal;
+font-variant: normal;
+text-transform: capitalize;
+color: #FFFFFF;
+text-shadow: 4px 3px 0 #7A7A7A;
+color: #FFFFFF;
+padding: 250px;
+}
+
+.Article2Header 
+    { grid-area: Header;
+        background-color:#F46731;
+        height: 500px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        text-align: center;
+        vertical-align: middle;
+        font-size: 75px;
+letter-spacing: 2.2px;
+word-spacing: 5.2px;
+font-weight: 700;
+text-decoration: none;
+font-style: normal;
+font-variant: normal;
+text-transform: capitalize;
+color: #FFFFFF;
+text-shadow: 4px 3px 0 #7A7A7A;
+color: #FFFFFF;
+padding: 250px;
+}
+
+.Article3Header 
+    { grid-area: Header;
+        background-color: #2BCDC0;
+        height: 500px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        text-align: center;
+        vertical-align: middle;
+        font-size: 75px;
+letter-spacing: 2.2px;
+word-spacing: 5.2px;
+font-weight: 700;
+text-decoration: none;
+font-style: normal;
+font-variant: normal;
+text-transform: capitalize;
+color: #FFFFFF;
+text-shadow: 4px 3px 0 #7A7A7A;
+color: #FFFFFF;
+padding: 250px;
+}
+
+
+
+ 
+
+
+
+
+  
