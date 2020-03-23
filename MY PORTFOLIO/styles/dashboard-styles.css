@@ -2,15 +2,13 @@
   div.grid-container {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas: 
     "header"
     "left_col"
-    "left_col"
-    "main_col"
     "main_col"
     "right_col";
   }
+
   /* div.header {
     grid-column: 1/2;
     background-color: #373770;
